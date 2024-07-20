@@ -75,7 +75,7 @@ dags:
     maxFailures: 2
     # subpath within the repo where dags are located
     # should be "" if dags are at repo root
-    subPath: ""
+    subPath: "Projeto/dags"
     
     # If you are using an ssh clone url, you can load
     # the ssh private key to a k8s secret like the one below
