@@ -1,0 +1,155 @@
+[0m11:18:29.131668 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019FBB2151F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019FBD8216A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019FBD823650>]}
+
+
+============================== 11:18:29.134758 | 487a4463-c1af-4fd3-a970-5e510b51bfe7 ==============================
+[0m11:18:29.134758 [info ] [MainThread]: Running with dbt=1.8.3
+[0m11:18:29.135761 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\fb_gr\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m11:18:38.185736 [debug] [MainThread]: Starter project path: c:\Users\fb_gr\OneDrive\Área de Trabalho\meu_airflow\dbt\.venv\Lib\site-packages\dbt\include\starter_project
+[0m11:18:38.202784 [info ] [MainThread]: 
+Your new dbt project "projeto_red" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:18:38.203784 [info ] [MainThread]: Setting up your profile.
+[0m11:18:43.339728 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m11:18:43.340726 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m11:19:50.452225 [info ] [MainThread]: Profile projeto_red written to C:\Users\fb_gr\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m11:19:50.453727 [debug] [MainThread]: Command `dbt init` succeeded at 11:19:50.453727 after 81.42 seconds
+[0m11:19:50.454731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019FBB2151F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019FBE452DE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019FBDB74410>]}
+[0m11:19:50.454731 [debug] [MainThread]: Flushing usage events
+[0m11:19:58.056546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D94D7EC110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D94D84BE00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D94D3BC4A0>]}
+
+
+============================== 11:19:58.060052 | b258b881-2a18-4e5a-8f2f-958f36ecca68 ==============================
+[0m11:19:58.060052 [info ] [MainThread]: Running with dbt=1.8.3
+[0m11:19:58.060052 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\fb_gr\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:19:58.074624 [info ] [MainThread]: dbt version: 1.8.3
+[0m11:19:58.076627 [info ] [MainThread]: python version: 3.12.4
+[0m11:19:58.076627 [info ] [MainThread]: python path: c:\Users\fb_gr\OneDrive\Área de Trabalho\meu_airflow\dbt\.venv\Scripts\python.exe
+[0m11:19:58.076627 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m11:19:58.169129 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m11:19:58.169129 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m11:19:58.199886 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.redshiftr'
+[0m11:19:58.201885 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m11:19:58.205391 [info ] [MainThread]: Using profiles dir at C:\Users\fb_gr\.dbt
+[0m11:19:58.205391 [info ] [MainThread]: Using profiles.yml file at C:\Users\fb_gr\.dbt\profiles.yml
+[0m11:19:58.206391 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\fb_gr\OneDrive\Área de Trabalho\meu_airflow\dbt\dbt_project.yml
+[0m11:19:58.206391 [info ] [MainThread]: Configuration:
+[0m11:19:58.206391 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m11:19:58.207391 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m11:19:58.207391 [info ] [MainThread]: Required dependencies:
+[0m11:19:58.207391 [debug] [MainThread]: Executing "git --help"
+[0m11:19:58.230918 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:19:58.231918 [debug] [MainThread]: STDERR: "b''"
+[0m11:19:58.231918 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:19:58.231918 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m11:19:58.231918 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m11:19:58.233422 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "northwind", target "dev" invalid: Runtime Error
+    Could not find adapter type redshiftr!
+
+Runtime Error
+  Credentials in profile "primeiro_projeto", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+
+[0m11:19:58.233422 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\fb_gr\OneDrive\Área de Trabalho\meu_airflow\dbt\dbt_project.yml> not found
+
+[0m11:19:58.235427 [debug] [MainThread]: Command `dbt debug` failed at 11:19:58.234426 after 0.28 seconds
+[0m11:19:58.235427 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D94812A750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D94DDFEA80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D94E1DB680>]}
+[0m11:19:58.235427 [debug] [MainThread]: Flushing usage events
+[0m11:20:43.564551 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D8061AAE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D8061A840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D8061A780>]}
+
+
+============================== 11:20:43.567551 | eb66c330-543b-44df-b4f0-4401a3544904 ==============================
+[0m11:20:43.567551 [info ] [MainThread]: Running with dbt=1.8.3
+[0m11:20:43.567551 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\fb_gr\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:20:43.578589 [info ] [MainThread]: dbt version: 1.8.3
+[0m11:20:43.579589 [info ] [MainThread]: python version: 3.12.4
+[0m11:20:43.579589 [info ] [MainThread]: python path: c:\Users\fb_gr\OneDrive\Área de Trabalho\meu_airflow\dbt\.venv\Scripts\python.exe
+[0m11:20:43.580591 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m11:20:43.673383 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m11:20:43.673383 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m11:20:43.704928 [info ] [MainThread]: Using profiles dir at C:\Users\fb_gr\.dbt
+[0m11:20:43.705928 [info ] [MainThread]: Using profiles.yml file at C:\Users\fb_gr\.dbt\profiles.yml
+[0m11:20:43.705928 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\fb_gr\OneDrive\Área de Trabalho\meu_airflow\dbt\dbt_project.yml
+[0m11:20:43.706929 [info ] [MainThread]: adapter type: redshift
+[0m11:20:43.707930 [info ] [MainThread]: adapter version: 1.8.1
+[0m11:20:43.707930 [info ] [MainThread]: Configuration:
+[0m11:20:43.708928 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:20:43.708928 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m11:20:43.708928 [info ] [MainThread]: Required dependencies:
+[0m11:20:43.708928 [debug] [MainThread]: Executing "git --help"
+[0m11:20:43.733464 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:20:43.734468 [debug] [MainThread]: STDERR: "b''"
+[0m11:20:43.734468 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:20:43.735468 [info ] [MainThread]: Connection:
+[0m11:20:43.735468 [info ] [MainThread]:   host: default-workgroup.730335567951.us-east-1.redshift-serverless.amazonaws.com
+[0m11:20:43.735468 [info ] [MainThread]:   user: admin
+[0m11:20:43.736468 [info ] [MainThread]:   port: 5439
+[0m11:20:43.736468 [info ] [MainThread]:   database: dev
+[0m11:20:43.736468 [info ] [MainThread]:   method: database
+[0m11:20:43.737468 [info ] [MainThread]:   cluster_id: None
+[0m11:20:43.737468 [info ] [MainThread]:   iam_profile: None
+[0m11:20:43.738468 [info ] [MainThread]:   schema: raw
+[0m11:20:43.738468 [info ] [MainThread]:   sslmode: prefer
+[0m11:20:43.738468 [info ] [MainThread]:   region: None
+[0m11:20:43.739468 [info ] [MainThread]:   sslmode: prefer
+[0m11:20:43.739468 [info ] [MainThread]:   region: None
+[0m11:20:43.740468 [info ] [MainThread]:   iam_profile: None
+[0m11:20:43.740468 [info ] [MainThread]:   autocreate: False
+[0m11:20:43.740468 [info ] [MainThread]:   db_groups: []
+[0m11:20:43.741469 [info ] [MainThread]:   ra3_node: False
+[0m11:20:43.741469 [info ] [MainThread]:   connect_timeout: None
+[0m11:20:43.741469 [info ] [MainThread]:   role: None
+[0m11:20:43.742468 [info ] [MainThread]:   retries: 1
+[0m11:20:43.742468 [info ] [MainThread]:   autocommit: True
+[0m11:20:43.742468 [info ] [MainThread]: Registered adapter: redshift=1.8.1
+[0m11:20:43.743468 [debug] [MainThread]: Acquiring new redshift connection 'debug'
+[0m11:20:43.745530 [debug] [MainThread]: Using redshift connection "debug"
+[0m11:20:43.746530 [debug] [MainThread]: On debug: select 1 as id
+[0m11:20:43.746530 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:20:43.749530 [debug] [MainThread]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m11:20:43.749530 [debug] [MainThread]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m11:20:45.775451 [debug] [MainThread]: SQL status: SUCCESS in 2.029 seconds
+[0m11:20:45.775451 [debug] [MainThread]: On debug: Close
+[0m11:20:45.776451 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:20:45.776451 [info ] [MainThread]: [31m1 check failed:[0m
+[0m11:20:45.777452 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\fb_gr\OneDrive\Área de Trabalho\meu_airflow\dbt\dbt_project.yml> not found
+
+[0m11:20:45.778455 [debug] [MainThread]: Command `dbt debug` failed at 11:20:45.778455 after 2.31 seconds
+[0m11:20:45.778455 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:20:45.778455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D80C23E00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D80643D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D805AAE70>]}
+[0m11:20:45.778455 [debug] [MainThread]: Flushing usage events
+[0m11:27:59.561218 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019174213680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191769770E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019176BA4DA0>]}
+
+
+============================== 11:27:59.564724 | 066bf4b0-e040-40a8-aa5d-22977de21227 ==============================
+[0m11:27:59.564724 [info ] [MainThread]: Running with dbt=1.8.3
+[0m11:27:59.564724 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\fb_gr\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt seed', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:27:59.565724 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\fb_gr\OneDrive\Área de Trabalho\meu_airflow\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m11:27:59.565724 [debug] [MainThread]: Command `dbt seed` failed at 11:27:59.565724 after 0.11 seconds
+[0m11:27:59.566724 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001917632A960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019174213680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019176A14E30>]}
+[0m11:27:59.566724 [debug] [MainThread]: Flushing usage events
