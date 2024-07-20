@@ -5,7 +5,7 @@ from cosmos.profiles import RedshiftUserPasswordProfileMapping
 from cosmos.constants import TestBehavior
 
 from pendulum import datetime
-#teste
+#teste novo
 
 CONNECTION_ID = "teste-red"
 DB_NAME = "dev"
