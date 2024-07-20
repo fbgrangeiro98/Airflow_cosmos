@@ -29,7 +29,7 @@ profile_config = ProfileConfig(
     schedule=None,
     catchup=False
 )
-def dag_eddy():
+def dbt_run_project():
 
     start_process = DummyOperator(task_id='start_process')
 
@@ -47,4 +47,4 @@ def dag_eddy():
     start_process >> transform_data
 
 
-dag_eddy()
+dbt_run_project()

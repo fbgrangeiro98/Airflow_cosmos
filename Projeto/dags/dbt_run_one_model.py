@@ -29,7 +29,7 @@ profile_config = ProfileConfig(
     schedule=None,
     catchup=False
 )
-def dag_bruno():
+def dbt_run_one_model():
 
     start_process = DummyOperator(task_id='start_process')
 
@@ -45,4 +45,4 @@ def dag_bruno():
     start_process >> transform_data
 
 
-dag_bruno()
+dbt_run_one_model()
