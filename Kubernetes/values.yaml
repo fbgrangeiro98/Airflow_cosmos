@@ -3,10 +3,10 @@
 airflowHome: /opt/airflow
 
 # Default airflow repository -- overridden by all the specific images below
-defaultAirflowRepository: brunojyh/meuairflowdbt
+defaultAirflowRepository: brunojyh/projeto_airflow_dbt
 
 # Default airflow tag to deploy
-defaultAirflowTag: "nono-teste"
+defaultAirflowTag: "1.0"
 
 # Default airflow digest. If specified, it takes precedence over tag
 defaultAirflowDigest: ~
@@ -33,7 +33,7 @@ env:
 # Fernet key settings
 # Note: fernetKey can only be set during install, not upgrade
 fernetKey: ~
-fernetKeySecretName: ~
+fernetKeySecretName: fernet-secret
 
 
 # Flask secret key for Airflow Webserver: `[webserver] secret_key` in airflow.cfg
