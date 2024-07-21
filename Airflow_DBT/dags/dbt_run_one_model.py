@@ -11,7 +11,7 @@ CONNECTION_ID = "teste-red"
 DB_NAME = "dev"
 SCHEMA_NAME = "raw"
 
-ROOT_PATH = '/opt/airflow/dags/repo/Projeto/dags/dbt'
+ROOT_PATH = '/opt/airflow/dags/repo/Airflow_DBT/dags/dbt'
 DBT_PROJECT_PATH = f"{ROOT_PATH}/projeto_red"
 
 profile_config = ProfileConfig(

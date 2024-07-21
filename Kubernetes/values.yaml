@@ -29,6 +29,14 @@ allowPodLaunching: true
 env: 
 - name: "AIRFLOW__CORE__TEST_CONNECTION"
   value: "Enabled"
+- name:  "AIRFLOW__CORE__REMOTE_LOGGING"
+  value: "True"
+- name:  "AIRFLOW__CORE__REMOTE_BASE_LOG_FOLDER"
+  value: "s3://airflow-logs-puc-bruno/logs/"
+- name:  "AIRFLOW__CORE__REMOTE_LOG_CONN_ID"
+  value: "logs_aws"
+- name:  "AIRFLOW__CORE__ENCRYPT_S3_LOGS"
+  value: "False"
 
 # Fernet key settings
 # Note: fernetKey can only be set during install, not upgrade
@@ -75,7 +83,7 @@ dags:
     maxFailures: 2
     # subpath within the repo where dags are located
     # should be "" if dags are at repo root
-    subPath: "Projeto/dags"
+    subPath: "Airflow_DBT/dags"
     
     # If you are using an ssh clone url, you can load
     # the ssh private key to a k8s secret like the one below
