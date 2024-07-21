@@ -7,9 +7,9 @@ from cosmos.constants import TestBehavior
 from pendulum import datetime
 #teste novo
 
-CONNECTION_ID = "teste-red"
+CONNECTION_ID = "redshift"
 DB_NAME = "dev"
-SCHEMA_NAME = "raw"
+SCHEMA_NAME = "teste"
 
 ROOT_PATH = '/opt/airflow/dags/repo/Airflow_DBT/dags/dbt'
 DBT_PROJECT_PATH = f"{ROOT_PATH}/projeto_red"

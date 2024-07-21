@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: airbnb
-    schema: raw
+  - name: cidades
+    schema: teste
     tables:
-     - name: teste_modelo
+     - name: meu_teste 

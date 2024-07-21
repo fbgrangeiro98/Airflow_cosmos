@@ -3,7 +3,7 @@
 }}
 
 WITH src_listings AS (
-SELECT * FROM {{source('airbnb','teste_modelo')}}
+SELECT * FROM {{source('cidades','meu_teste')}}
 )
 SELECT
 *
