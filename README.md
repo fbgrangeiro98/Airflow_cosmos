@@ -96,7 +96,7 @@ Projeto utilizando **Airflow** e **DBT** para processamento e orquestração de 
     choco install terraform
     ```
 
-13. **iniciando o cluster do redshift com terrform**
+13. **iniciando o cluster do redshift com terraform**
 
     Execute o comando abaixo para iniciar o terraform do projeto:
     ```bash
