@@ -11,56 +11,67 @@ Projeto utilizando **Airflow** e **DBT** para processamento e orquestração de 
     New-Item -Path 'c:\' -Name 'minikube' -ItemType Directory -Force
     Invoke-WebRequest -OutFile 'c:\minikube\minikube.exe' -Uri 'https://github.com/kubernetes/minikube/releases/latest/download/minikube-windows-amd64.exe' -UseBasicParsing
     ```
-    
-    adicione o arquivo minikube.exe binario na variavel PATH no windows.
 
+    Após o download adicione o arquivo minikube.exe binario na variavel PATH no windows.
 
-2. **Gerar a Chave do Repositório**
+2. **Iniciando o cluster do Kubernetes no minikube**
+    Execute o comando abaixo para iniciar o cluster minikube:
+    ```bash
+    minikube start 
+    ```
+
+3. **Gerar a Chave do Repositório**
 
    Execute o comando abaixo para gerar uma chave SSH:
 
    ```bash
    ssh-keygen -t ed25519 -C "seu-email@example.com"
+   ``` 
 
-
-3. **Criptografar a Chave Gerada**
+4. **Criptografar a Chave Gerada**
 
     Para criptografar a chave em base64, utilize o comando:
 
     ```bashbash
     base64 id_ed25519 | tr -d "\n"
+    ```
 
-4. **Criar Secrets no Kubernetes**
+5. **Criar Secrets no Kubernetes**
 
     Crie o Secret para a chave SSH com:
     
     ```bashbash
     kubectl apply -f airflow-ssh-secret_exemplo.yaml -n airflow
+    ```
 
-5. **Baixar o Chart do Airflow para o Helm**
+6. **Baixar o Chart do Airflow para o Helm**
 
     Adicione o repositório do Airflow ao Helm:
     
     ```bashbash
     helm repo add apache-airflow https://airflow.apache.org
+    ```
 
-6. **Criar a Imagem Docker**
+7. **Criar a Imagem Docker**
 
     Construa a imagem Docker com as bibliotecas necessárias:
     
     ```bashbash
     docker build -t brunojyh/projeto_airflow_dbt:1.0 .
+    ```
 
-7. **Enviar a Imagem para o Docker Hub**
+8. **Enviar a Imagem para o Docker Hub**
 
     Envie a imagem Docker para o Docker Hub:
     
     ```bashbash
     docker push brunojyh/projeto_airflow_dbt:1.0 .
+    ```
 
-8. **Instalar o Chart do Airflow**
+9. **Instalar o Chart do Airflow**
 
     Instale o chart no Kubernetes com:
     
     ```bashbash
     helm install airflow apache-airflow/airflow -n airflow -f values.yaml
+    ```
