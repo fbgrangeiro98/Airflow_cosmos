@@ -20,7 +20,7 @@ Projeto utilizando **Airflow** e **DBT** para processamento e orquestração de 
     ```bash
     minikube start 
     ```
-    Lembre-se de deixar o docker desktop aberto
+    Lembre-se de deixar o docker desktop executando
 
 3. **Gerando a Chave do Repositório Privado para o github**
 
