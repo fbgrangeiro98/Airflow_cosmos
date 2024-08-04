@@ -4,7 +4,7 @@ Projeto utilizando **Airflow** e **DBT** para processamento e orquestração de 
 
 ## Passos para Configuração
 
-1. **instalar o cluster do Kubernetes**
+1. **instalando o cluster do Kubernetes usando minikube e docker**
 
     Execute o comando abaixo para fazer o download do minikube:
     ```bash
@@ -19,8 +19,9 @@ Projeto utilizando **Airflow** e **DBT** para processamento e orquestração de 
     ```bash
     minikube start 
     ```
+    Lembre-se de deixar o docker desktop aberto
 
-3. **Gerar a Chave do Repositório**
+3. **Gerando a Chave do Repositório Privado para o github**
 
    Execute o comando abaixo para gerar uma chave SSH:
 
@@ -28,50 +29,58 @@ Projeto utilizando **Airflow** e **DBT** para processamento e orquestração de 
    ssh-keygen -t ed25519 -C "seu-email@example.com"
    ``` 
 
-4. **Criptografar a Chave Gerada**
+4. **Criptografando a Chave Gerada**
 
     Para criptografar a chave em base64, utilize o comando:
 
-    ```bashbash
+    ```bash
     base64 id_ed25519 | tr -d "\n"
     ```
-
-5. **Criar Secrets no Kubernetes**
-
-    Crie o Secret para a chave SSH com:
     
-    ```bashbash
+
+5. **Criando a Secret no Kubernetes**
+
+    Com a chave ssh criptografada gerada adicione ela ao arquivo airflow-ssh-secret_exemplo.yaml e execute o comando abaixo para aplicar:
+    
+    ```bash
     kubectl apply -f airflow-ssh-secret_exemplo.yaml -n airflow
     ```
 
-6. **Baixar o Chart do Airflow para o Helm**
+6. **instalando o Helm**
+
+    Execute o comando abaixo para baixar o binario do helm
+    ```bash
+    choco install kubernetes-helm
+    ```
+
+7. **Baixando o Chart do Airflow para o Helm**
 
     Adicione o repositório do Airflow ao Helm:
     
-    ```bashbash
+    ```bash
     helm repo add apache-airflow https://airflow.apache.org
     ```
 
-7. **Criar a Imagem Docker**
+8. **Criando a Imagem Docker**
 
-    Construa a imagem Docker com as bibliotecas necessárias:
+    Construindo a imagem Docker com as bibliotecas necessárias:
     
-    ```bashbash
+    ```bash
     docker build -t brunojyh/projeto_airflow_dbt:1.0 .
     ```
 
-8. **Enviar a Imagem para o Docker Hub**
+9. **Enviaando a Imagem para o Docker Hub**
 
-    Envie a imagem Docker para o Docker Hub:
+    Enviando a imagem Docker para o Docker Hub:
     
-    ```bashbash
+    ```bash
     docker push brunojyh/projeto_airflow_dbt:1.0 .
     ```
 
-9. **Instalar o Chart do Airflow**
+10. **Instalando o Chart do Airflow**
 
-    Instale o chart no Kubernetes com:
+    Instalando o chart no Kubernetes com helm:
     
-    ```bashbash
+    ```bash
     helm install airflow apache-airflow/airflow -n airflow -f values.yaml
     ```
