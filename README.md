@@ -71,7 +71,7 @@ Projeto utilizando **Airflow** e **DBT** para processamento e orquestração de 
 
 9. **Enviaando a Imagem para o Docker Hub**
 
-    Enviando a imagem Docker para o Docker Hub:
+    Enviando a imagem para o Docker Hub:
     
     ```bash
     docker push brunojyh/projeto_airflow_dbt:1.0 .
@@ -84,3 +84,27 @@ Projeto utilizando **Airflow** e **DBT** para processamento e orquestração de 
     ```bash
     helm install airflow apache-airflow/airflow -n airflow -f values.yaml
     ```
+
+11. **Acessando o Airflow**
+
+    ```bash
+    kubectl port-forward svc/airflow-webserver 8080:8080 -n airflow
+    ```
+
+12. **instalando o terraform**
+    ```bash
+    choco install terraform
+    ```
+
+13. **iniciando o cluster do redshift com terrform
+
+    Execute o comando abaixo para iniciar o terraform do projeto:
+    ```bash
+    terraform init
+    ```
+    
+    Em seguida inicie o cluster com o comando:
+    ```bash
+    terraform apply
+    ```
+
