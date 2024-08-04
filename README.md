@@ -15,6 +15,7 @@ Projeto utilizando **Airflow** e **DBT** para processamento e orquestração de 
     Após o download adicione o arquivo minikube.exe binario na variavel PATH no windows.
 
 2. **Iniciando o cluster do Kubernetes no minikube**
+
     Execute o comando abaixo para iniciar o cluster minikube:
     ```bash
     minikube start 
